@@ -32,7 +32,7 @@ var webserver = http.createServer(app).listen(app.get('port'), function(){
 });
 
 app.get('/', function (req, res){
-	if( req.get('host') == 'ab.mixlab.be' ) return res.render('dummy'); // om nu ff te testen, mag weg later
+	if( req.get('host') == 'ab.mixapp.be' ) return res.render('dummy'); // om nu ff te testen, mag weg later
 
 
 	// http://stackoverflow.com/questions/8107856/how-can-i-get-the-users-ip-address-using-node-js
