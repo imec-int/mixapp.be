@@ -6,7 +6,7 @@ Site die online zal draaien als de mensen toch via 3G/Edge naar mixapp.be surfen
 
 Als ze naar mixlab.be surfen, dan krijgen de genodigden de boodschap dat ze zich met het wifi-netwerk moeten verbinden.
 
-Als ze met het wifi-netwerk verbonden zijn, zullen ze langs onze lokale DNS-server passeren die hen zal vertellen dat mixapp.be een lokaal ip-adres is. De lokale DNS-server staat namelijk binnen het AB-netwerk.
+Als ze met het wifi-netwerk verbonden zijn, zullen ze langs onze lokale DNS-forwarder passeren die hen zal vertellen dat mixapp.be een lokaal ip-adres is. De lokale DNS-forwarder staat namelijk binnen het AB-netwerk.
 
 
 Mochten ze **via de wifi** voor één of andere reden toch op de online versie van mixapp.be terechtkomen (door DNS caching), dan wordt online toch nog eens gecheckt of ze niet met het IP van de AB aan het surfen zijn. In dat geval worden ze geredirect naar ab.mixlab.be, die sowieso naar het lokaal ip-adres binnen de AB verwijst.
@@ -22,7 +22,7 @@ Momenteel zit hier een dummypagina in die de lokale mixapp.be (alsook ab.mixapp.
 
 * Op Amazon Route 53: A-record voor ```ab.mixapp.be``` aanpassen naar lokaal IP-adres (machine waar regie-app op draait) binnen AB.
 
-* Op AB zelf: lokale DNS opzetten waarbij ```www.mixapp.be```, ```mixapp.be``` en ```ab.mixapp.be``` naar dat lokaal-IP adres verwijzen
+* Op AB zelf: lokale DNS-forwarder opzetten waarbij ```www.mixapp.be```, ```mixapp.be``` en ```ab.mixapp.be``` naar dat lokaal-IP adres verwijzen
 
-* Onze DNS-server instellen op de Ruckus ZoneDirector van Ward van InAnyEvent. Ward zal daar zelf ook zijn.
+* Onze DNS-forwarder instellen op de Ruckus ZoneDirector van Ward van InAnyEvent. Ward zal daar zelf ook zijn.
 
