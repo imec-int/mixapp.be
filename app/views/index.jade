@@ -1,0 +1,29 @@
+doctype html5
+html
+	head
+		meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
+		title= title
+		link(href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,100', rel='stylesheet', type='text/css')
+
+		link(rel='stylesheet', href="/stylesheets/style.css")
+
+		script(type='text/javascript', src='//code.jquery.com/jquery.min.js')
+		script(type='text/javascript', src='/vendor/jquery.tmpl.min.js')
+		script(type='text/javascript', src='/javascripts/index.js')
+	body
+		.content
+			| Je bent niet verbonden met ons wifi-netwerk.
+			br
+			br
+			| Om mee te kunnen doen met de interactiviteit moet u op het wifi-netwerk zitten.
+			br
+			| Verbindt daarom met <b>2 jaar MiX</b> en surf terug naar deze pagina.
+			br
+			br
+			img.howto(src="/images/howto.jpg")
+			br
+			br
+			.ip jouw ip: #{ip}
+			br
+			br
+			.ip (ja Els, dat moet hier nog gestyled en minder West-Vlaams gemaakt worden, geef gerust opmerkingen ;-) )
