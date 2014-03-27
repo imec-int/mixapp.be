@@ -41,8 +41,6 @@ app.get('/', function (req, res){
 		req.socket.remoteAddress ||
 		req.connection.socket.remoteAddress;
 
-	console.log(ip);
-
 	// je bent op de wifi als je ip dat van de AB is (moeten we nog zien uit te vissen wat dat is dinsdag):
 	// maar normaal gezien mag je hier dan niet komen aangezien onze lokale DNS server jou naar een lokaal ip zou moeten gestuurd hebben,
 	// maarja, je weet nooit
