@@ -17,5 +17,12 @@ Ik stel voor om de TTL's op Amazon Route 53 zo laag mogelijk te zetten. Zo blijf
 ### Dummy pagina
 Momenteel zit hier een dummypagina in die de lokale mixapp.be (alsook ab.mixapp.be) moet voorstellen.Dat is nu gewoon om te testen.
 
+## TODO op 1 april:
+* ```ipAB``` aanpassen in ```app/config.js``` naar het IP-adres waarmee het gesurft wordt als je vanuit de AB, via onze wifi surft.
 
+* Op Amazon Route 53: A-record voor ```ab.mixapp.be``` aanpassen naar lokaal IP-adres (machine waar regie-app op draait) binnen AB.
+
+* Op AB zelf: lokale DNS opzetten waarbij ```www.mixapp.be```, ```mixapp.be``` en ```ab.mixapp.be``` naar dat lokaal-IP adres verwijzen
+
+* Onze DNS-server instellen op de Ruckus ZoneDirector van Ward van InAnyEvent. Ward zal daar zelf ook zijn.
 
