@@ -3,7 +3,7 @@ html
 	head
 		meta(name='viewport', content='initial-scale=1.0, user-scalable=no')
 		title= title
-		link(href='http://fonts.googleapis.com/css?family=Roboto:400,700,400italic,100', rel='stylesheet', type='text/css')
+		link(type='text/fonts', rel='stylesheet', src="/vendor/Roboto")
 
 		link(rel='stylesheet', href="/stylesheets/style.css")
 
@@ -12,16 +12,27 @@ html
 		script(type='text/javascript', src='/javascripts/index.js')
 	body
 		.content
-			| Je bent niet verbonden met ons wifi-netwerk.
-			br
-			br
-			| Om mee te kunnen doen met de interactiviteit moet u op het wifi-netwerk zitten.
-			br
-			| Verbind daarom met <b>MiX2014!</b> (wachtwoord: <b>MiX2014!</b>) en surf terug naar deze pagina.
-			br
-			br
-			br
-			.ip jouw ip: #{ip}
-			br
-			br
-			.ip (ja Els, dat moet hier nog gestyled en minder West-Vlaams gemaakt worden, geef gerust opmerkingen ;-) )
+			.header
+				h2 Opgelet: je bent niet verbonden met ons <nobr>wifi-netwerk!</nobr>
+
+			.info
+				| Om mee te kunnen doen met de interactiviteit moet u met ons wifi-netwerk verbonden zijn:
+				br
+				br
+				| netwerk: <b>mix2014!</b>
+				br
+				| wachtwoord: <b>mix2014!</b>
+				br
+				br
+				| Verbind en herlaad deze pagina.
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+				br
+				.ip jouw ip: #{ip}
+				br
+				br

@@ -5,6 +5,7 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.css
 
 pids
 logs
@@ -17,3 +18,4 @@ node_modules
 
 !**/vendor/**/*.css
 !**/dist/**/*.css
+test/
