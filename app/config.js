@@ -1,1 +1,1 @@
-exports.abIP = '193.191.148.203';
+exports.abIP = '';
